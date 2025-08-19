@@ -1,13 +1,18 @@
-# Synthea Cancer Analysis
+# Synthea Cancer Cohort Analysis
 
-**Cohort:** Cancer patients with first diagnosis >= 2020 (N=275)
+This project reconstructs **patient journeys for cancer patients** using synthetic EHR data generated from [Synthea](https://synthetichealth.github.io/synthea/). The goal is to modernize the traditional SQL-based workflow for patient journey analytics with reproducible **Python + ML/AI pipelines**.
 
-**Week 1 done:**
-- Generated Synthea 10k, CSV export
-- Built cohort (post-2020 cancers)
-- Filtered medications & procedures using master lists
-- Documented observations (see docs/Week1_Observations.md)
+## Objectives
+- Filter and define a cancer patient cohort from synthetic EHR data  
+- Identify and categorize **oncology drugs and procedures**  
+- Reconstruct **regimens** by grouping therapies in clinical windows  
+- Define and track **Lines of Therapy (LoT)** using clinically informed rules  
+- Generate patient-level and line-level outputs for downstream ML/AI exploration  
 
-**Next (Week 2):**
-- Build regimens and lines of therapy
-- Progression rules & journey outputs
+## Why this project?
+In pharma analytics, understanding the **sequence of treatments** patients receive is critical for market research, real-world evidence, and strategy. Traditionally this has been done with **SQL and manual rules**. This project demonstrates how the same process can be:
+- **Automated** with Python  
+- **Flexible** through configuration tables (drug/procedure mappings)  
+- **Extensible** with ML/AI (e.g., clustering journeys, LLM summarization)  
+
+## Repo Structure
