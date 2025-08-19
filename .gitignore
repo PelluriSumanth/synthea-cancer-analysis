@@ -10,7 +10,7 @@ __pycache__/
 venv/
 *.egg-info/
 
-# Data (keep raw and cleaned CSVs out of git)
+# Data (ignored)
 data/**/*.csv
 data/*.csv
 data_clean/**/*.csv
@@ -26,6 +26,6 @@ outputs/*.csv
 *.zip
 *.gz
 
-# Credentials
+# Secrets
 *.env
 .env
